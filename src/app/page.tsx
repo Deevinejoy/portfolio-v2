@@ -68,7 +68,7 @@ export default function Home() {
         name: 'Admin dashboard',
         des: 'Finacial admin dashboard',
         link: 'https://ewc-dj-eox7.vercel.app/',
-        img: '/ewc.png'
+        img: '/dash.png'
     },
  
     {
