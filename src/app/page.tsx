@@ -65,7 +65,7 @@ export default function Home() {
 
   const projects = [
     {
-        name: 'CyberDeeajay',
+        name: 'CyberDeejay',
         des: 'Musc playing app with spotify API',
         link: 'https://cyber-deejay.vercel.app',
         img: '/cyberdeejay.png'
