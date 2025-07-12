@@ -113,7 +113,7 @@ export default function Home() {
           {/* Hero Section */}
           <section className="h-screen flex items-center justify-center px-4">
             <div className="relative w-full flex justify-center">
-              <div className="absolute inset-0 max-w-4xl mx-auto rounded-2xl bg-white/70 dark:bg-black/60 backdrop-blur-md z-0" />
+              <div className="absolute inset-0 max-w-4xl mx-auto rounded-2xl bg-white/70 dark:glass-card backdrop-blur-md z-0" />
               <div className="text-center space-y-6 max-w-4xl mx-auto relative z-10 p-8 rounded-2xl">
                 <div className="mb-8">
                   <motion.div 
