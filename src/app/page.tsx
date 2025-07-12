@@ -25,6 +25,12 @@ const SocialIcon = ({ href, icon, label }: { href: string; icon: React.ReactNode
 export default function Home() {
   const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
 
+  const handleInputChange = () => {
+    if (formStatus === 'sent' || formStatus === 'error') {
+      setFormStatus('idle');
+    }
+  };
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormStatus('sending');
@@ -335,7 +341,7 @@ export default function Home() {
                 className="text-5xl md:text-6xl font-bold gradient-text mb-16 text-center"
               />
               <AnimatedCard className="p-8 backdrop-blur-sm bg-white/50 dark:bg-dark-card/50">
-                <form onSubmit={handleSubmit} className="space-y-8">
+                <form onSubmit={handleSubmit} onChange={handleInputChange} className="space-y-8">
                   <div className="space-y-3">
                     <label className="block text-2xl font-medium dark:text-purple-300">Name</label>
                     <input 
